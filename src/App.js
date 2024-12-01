@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Layout } from 'antd';
+import MovieList from './components/movieList';
 import './App.css';
+
+const { Header, Content, Footer } = Layout;
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Header style={{ background: '#001529', color: '#fff', textAlign: 'center', fontSize: '24px' }}>
+        Movie Management
+      </Header>
+
+      <Content style={{ padding: '24px', background: '#fff' }}>
+        <MovieList/>
+      </Content>
+
+      <Footer style={{ textAlign: 'center' }}>
+        Movie Management App ©2024 Created with React & Ant Design
+      </Footer>
+
+    </Layout>
+    
   );
 }
 

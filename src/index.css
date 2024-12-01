@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ant-table-tbody > tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.ant-table-tbody > tr:hover {
+  background-color: #e6f7ff;
+}
